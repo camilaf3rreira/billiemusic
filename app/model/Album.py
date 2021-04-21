@@ -4,12 +4,5 @@ class Album:
         self.anoDeLancamento=anoDeLancamento
         self.nomeDaBanda=nomeDaBanda
         
-        #print(self.tituloDoAlbum)
-
-
-
-    
-    #def message(self):
-     #   print("Você selecionou a opção 1!")
 
 

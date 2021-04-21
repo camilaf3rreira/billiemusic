@@ -1,11 +1,11 @@
 from os import system
-from time import sleep
+#from time import sleep
 
 class Menu:
 
     def menuInicial (self):
         print('''>>>>>Bem vindo ao sistema Billie Music!")
-        1- Cadastrar Álbum")
+        1- Cadastrar Álbum"
         2- Pesquisar Álbum
         3- Pesquisar Música
         4- Gerar Playlist
@@ -22,7 +22,7 @@ class Menu:
 
     def menuAlbum (self):
         infAlbum=[]
-        print(">>>>>Você selecionou a apção 1!")
+       # print(">>>>>Você selecionou a apção 1!")
         infAlbum.append(input("Digite o Título do Album:"))
         infAlbum.append(input("Digite o Ano de Lançamento:"))
         infAlbum.append(input("Digite o Nome da Banda:"))
@@ -45,7 +45,6 @@ class Menu:
         print("Músicas existentes no seu Album:")
         infMusica=self.menuMusica()
 
-    
     
     def clear(self):
         system("cls")

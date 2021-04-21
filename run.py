@@ -1,4 +1,3 @@
-from app.controller.default import start
+from app import app 
 
-
-start()
+app.start()
