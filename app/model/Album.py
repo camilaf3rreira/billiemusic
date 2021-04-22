@@ -3,6 +3,10 @@ class Album:
         self.tituloDoAlbum=tituloDoAlbum
         self.anoDeLancamento=anoDeLancamento
         self.nomeDaBanda=nomeDaBanda
+        self.listaMusicas=[]
+
+    def addLista(self, listaMusicas):
+        self.listaMusicas=listaMusicas
         
 
 

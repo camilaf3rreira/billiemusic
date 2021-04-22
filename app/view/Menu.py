@@ -4,7 +4,7 @@ from os import system
 class Menu:
 
     def menuInicial (self):
-        print('''>>>>>Bem vindo ao sistema Billie Music!")
+        print('''>>>>>Bem vindo ao sistema Billie Music!
         1- Cadastrar Álbum"
         2- Pesquisar Álbum
         3- Pesquisar Música
@@ -40,12 +40,16 @@ class Menu:
         infMusica.append(favorita)
         return infMusica
 
-    def listaMusica (self):
-        listaMusicas=[]
-        print("Músicas existentes no seu Album:")
-        infMusica=self.menuMusica()
+    def continuar (self):
+        maisMusica=input("Você deseja adicionar mais músicas? Diga 0 para Não e 1 Sim!")
+        while(maisMusica not in ["0","1"]):
+                maisMusica=input("Opção inválida, tente novamente!")
+        return maisMusica           
 
-    
+    def listaAlbuns(self):
+        pass
+
+
     def clear(self):
         system("cls")
 
